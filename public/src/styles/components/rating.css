@@ -1,0 +1,31 @@
+.rating {
+  display: flex;
+  align-items: center;
+}
+
+.rating-stars {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.rating-star {
+  cursor: pointer;
+  color: var(--color-text-tertiary);
+  font-size: 1.25rem;
+  transition: transform var(--transition-fast), color var(--transition-fast);
+}
+
+.rating-star:hover {
+  transform: scale(1.2);
+}
+
+.rating-star.active {
+  color: var(--color-accent);
+}
+
+.rating-value {
+  margin-left: var(--spacing-xs);
+  font-weight: 500;
+  color: var(--color-text-primary);
+}
